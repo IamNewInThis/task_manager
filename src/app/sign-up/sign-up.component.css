@@ -1,0 +1,119 @@
+/* Background image */
+.login-container {
+    background-image: url('../../../assets/background.png');
+    background-size: cover; /* Escalar el fondo para cubrir toda la pantalla */
+    background-position: center center; /* Centramos la imagen */
+    background-repeat: no-repeat; /* Evita que se repita la imagen */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Wrapper for form and image */
+  .form-wrapper {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Left image container */
+  .image-container {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    width: 90%;
+  }
+  
+  /* Right form container */
+  .login-form {
+    flex: 1;
+    background-color: #3684D8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .login-form h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: -50px;
+    text-align: center;
+  }
+  
+  /* Form fields and icons */
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .form-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3684D8;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  .form-group input {
+    width: 80%;
+    padding: 10px 10px 10px 40px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: white;
+    color: #223A59;
+    margin-left: 10px;
+  }
+  
+  .form-group input::placeholder {
+    color: #223A59;
+    font-weight: bold;
+  }
+  
+  /* Buttons */
+  .button-group {
+    display: flex;
+    margin-top: 20px;
+    gap: 48px; /* Espacio entre los botones */
+    width: 100%
+  }
+  
+  .create-btn, .signin-btn {
+    width: 40%;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    text-align: center; /* Asegura que el texto esté centrado */
+  
+  }
+  
+  .create-btn {
+    background-color: #FFA500;
+    color: white;
+    margin-left: 12px;
+  }
+  
+  .signin-btn {
+      background-color: #3684D8; /* Fondo azul */
+      color: white;
+      border: 1px solid white; /* Borde blanco */
+  }
+  
