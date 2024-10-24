@@ -1,0 +1,63 @@
+/* Contenedor de la barra lateral */
+.sidebar-container {
+    background-color: #fff;
+    padding: 20px;
+    width: 240px;
+    height: 87vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título en la parte superior (Task Manager) */
+.sidebar-header {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 20px; /* Tamaño de la fuente */
+    font-weight: bold;
+    color: #000; /* Color del texto */
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Estilo para los enlaces de navegación */
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    font-family: 'Inria Sans', sans-serif;
+    color: #003171;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilo para el ícono en cada enlace de navegación */
+.nav-icon {
+    margin-right: 10px;
+}
+
+/* Divider (línea) que separa cada nav-item */
+.divider {
+    border: 0;
+    height: 1px;
+    width: '100%';
+    background-color: #7d7d7b;
+    margin: 0;
+}
+
+/* Estilo del botón de cierre de sesión (Log Out) */
+.logout {
+    margin-top: auto;
+    font-family: 'Inria Sans', sans-serif;
+    color: #003171;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Hover effect para los enlaces */
+.nav-item:hover {
+    color: #003171; /* Color al pasar el mouse */
+}
