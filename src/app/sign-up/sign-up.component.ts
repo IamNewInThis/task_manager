@@ -21,13 +21,19 @@ export class SignUpComponent {
 
   // Método para registrarse
   async signUp() {
+    // Validar que los campos no estén vacíos
+    if (!this.email || !this.password) {
+      console.error('Por favor, completa todos los campos.');
+      return;
+    }
+
     try {
       const { error } = await this.supabaseService.signUp(this.email, this.password);
       if (error) {
         console.error('Error al registrarse:', error.message);
       } else {
         console.log('Usuario registrado exitosamente');
-        this.router.navigate(['/signin']);
+        this.router.navigate(['/signin']); // Navegar hacia la pantalla de inicio de sesión
       }
     } catch (err) {
       console.error('Ocurrió un error:', err);
