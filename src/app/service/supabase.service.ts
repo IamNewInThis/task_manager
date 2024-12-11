@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
 // Las claves de Supabase
-const supabaseUrl = 'https://cmsvelibmbutckrduyev.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNtc3ZlbGlibWJ1dGNrcmR1eWV2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjk3MTQ5MTksImV4cCI6MjA0NTI5MDkxOX0.ABjNlvC_vCdO-asxlQF6I8B4FS8ENGqJXwr__dnmmYc';
+const supabaseUrl = '';
+const supabaseKey = '';
 
 @Injectable({
   providedIn: 'root'
